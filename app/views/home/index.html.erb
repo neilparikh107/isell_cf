@@ -1,6 +1,14 @@
-<h1>iSell</h1>
-<h3>Where people come to buy stuff</h3>
+<div class="jumbotron">
+  <h1>iSell</h1>
+  <h3>Where people come to buy stuff</h3>
+  <!-- <button type="button" class="btn btn-primary">Sign Up</button>
+  <button type="button" class="btn btn-info">Sign In</button> -->
+  
+  <!-- Add Links that look like buttons via bootstrap classes -->
+  <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary" %>
+  <%= link_to "Sign In", new_user_session_path, class: "btn btn-info" %>
 
+</div>
 
 <!-- Add an About/Contact me page that can be linked through navbar -->
 <!-- Add background image? on homepage -->
