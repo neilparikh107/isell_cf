@@ -1,0 +1,5 @@
+Add ability to edit and update profile
+Add Buy, Sell links in navbar
+  - Buy --> Item Index
+  - Sell --> Item New
+Allow user to "become a seller" after signup
