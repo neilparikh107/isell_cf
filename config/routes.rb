@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :items
   resources :profiles
 
   # Add devise registrations controller to allow after sign up path
