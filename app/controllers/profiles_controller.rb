@@ -22,6 +22,11 @@ class ProfilesController < ApplicationController
     @profile = Profile.all
   end
 
+  # GET /profiles/1/edit
+  def edit
+    @profile = Profile.find(params[:id])
+  end
+
   # GET /profile/1
   # GET /profile/1.json
   def show

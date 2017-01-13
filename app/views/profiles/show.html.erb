@@ -23,7 +23,7 @@
 
 
 <% if current_user.profile == @profile %>
-  <%= link_to 'Edit', edit_profile_path(@profile), class: 'btn btn-warning' %>
+  <%= link_to 'Edit', edit_profile_path(current_user.profile), class: 'btn btn-warning' %>
 <% end %>
 
 </div></div></div></div>

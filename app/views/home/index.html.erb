@@ -1,3 +1,11 @@
+<section class="home-pg"><!-- # <%= image_tag("wallpaper.jpg", size:'320') %> -->
+<% if user_signed_in? %>
+  <div class="jumbotron">
+    <h1>Welcome to iSell, Hope you have and amazing experince</h1>
+    <img src="<%= image_path('wallpaper.jpg') %>" height="200" width="1000" />
+  </div>
+<% else %>
+
 <div class="jumbotron">
   <h1>iSell</h1>
   <h3>Where people come to buy stuff</h3>
@@ -9,7 +17,8 @@
   <%= link_to "Sign In", new_user_session_path, class: "btn btn-info" %>
 
 </div>
-
+<% end %>
+</section>
 <!-- Homework -->
 <!-- Add an About/Contact me page that can be linked through navbar -->
 <!-- Add background image? on homepage -->

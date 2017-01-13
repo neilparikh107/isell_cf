@@ -17,6 +17,9 @@
 
   <tbody>
     <% @items.each do |item| %>
+    <div class="w3-container">
+    <!-- <img src="<%= image_path('wallpaper.jpg') %>" height="150" width="300" /> -->
+
       <tr>
         <td><%= item.name %></td>
         <td><%= image_tag(item.picture_url(:thumbnail), :width => 50, :height => 50) %></td>
@@ -29,6 +32,7 @@
         <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
+  </div>
   </tbody>
 </table>
 
@@ -36,3 +40,7 @@
 <% if current_user.has_role? :seller %>
 <%= link_to 'New Item', new_item_path %>
 <% end %>
+
+<div class="w3-container">
+<img src="<%= image_path('wallpaper.jpg') %>" height="150" width="300" />
+</div>
